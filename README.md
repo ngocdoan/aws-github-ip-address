@@ -22,13 +22,13 @@ wget -O github.json https://api.github.com/meta
 ```
 ##### Get the ip range
 ```
-jq -r .hooks github.json | jq -r ".[]"
-jq -r .web github.json | jq -r ".[]"
-jq -r .api github.json | jq -r ".[]"
-jq -r .git github.json | jq -r ".[]"
-jq -r .packages github.json | jq -r ".[]"
-jq -r .pages github.json | jq -r ".[]"
-jq -r .importer github.json | jq -r ".[]"
-jq -r .actions github.json | jq -r ".[]"
-jq -r .dependabot github.json | jq -r ".[]"
+jq -r .hooks github.json | jq -r ".[]" >> github.txt
+jq -r .web github.json | jq -r ".[]" >> github.txt
+jq -r .api github.json | jq -r ".[]" >> github.txt
+jq -r .git github.json | jq -r ".[]" >> github.txt
+jq -r .packages github.json | jq -r ".[]" >> github.txt
+jq -r .pages github.json | jq -r ".[]" >> github.txt
+jq -r .importer github.json | jq -r ".[]" >> github.txt
+jq -r .actions github.json | jq -r ".[]" >> github.txt
+jq -r .dependabot github.json | jq -r ".[]" >> github.txt
 ```
