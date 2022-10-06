@@ -31,4 +31,5 @@ jq -r .pages github.json | jq -r ".[]" >> github.txt
 jq -r .importer github.json | jq -r ".[]" >> github.txt
 jq -r .actions github.json | jq -r ".[]" >> github.txt
 jq -r .dependabot github.json | jq -r ".[]" >> github.txt
+cat github.txt
 ```
