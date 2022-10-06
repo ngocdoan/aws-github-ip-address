@@ -12,7 +12,8 @@ wget https://ip-ranges.amazonaws.com/ip-ranges.json
 ```
 ##### Get the ip range
 ```
-cat ip-ranges.json| grep "ip_prefix" | sed 's/^.*: //' | sed 's/"//' | sed 's/",//'
+cat ip-ranges.json| grep "ip_prefix" | sed 's/^.*: //' | sed 's/"//' | sed 's/",//' >> aws.txt
+cat aws.txt
 ```
 #### Github
 
